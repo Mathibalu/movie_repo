@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>welocome to news</h1>
+<img src="{static 'images/prasanth.jpg.jpg'%}">
+<ul>
+
+    <h1>{{ head_msgs}}</h1>
+    <ul>
+        <li>{{sub_msg1}}</li>
+         <li>{{sub_msg2}}</li>
+         <li>{{sub_msg3}}</li>
+    </ul>
+    {% if type=='movies'}
+    <img src="{% static 'images/movie1.jpg.jpg'%}">
+    <img src="{% static 'images/movie2.jpg.jpg'%}">
+    {% elif type=='sports'}
+    <img src="{% static 'images/sports1.jpg.jpg'%}">
+    {% elif type=='sports'}
+       <img src="{% static 'images/images(1).jpg'%}">
+    {% end if }
+
+
+
+
+
+</body>
+</html>
+
+</body>
+</html>
